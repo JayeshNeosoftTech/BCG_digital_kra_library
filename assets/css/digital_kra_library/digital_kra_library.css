@@ -527,3 +527,143 @@ tr.open .td-long-text{
 }
 
 /* Filter Modal style */
+.filter-modal .modal-dialog{
+    top: 80px;
+}
+
+.filter-modal .modal-content{
+    padding: 15px 20px 25px 20px;
+}
+
+.filter-modal .modal-header{
+    padding-bottom: 20px;
+}
+.filter-modal .modal-header .close{
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #B0BAC9;
+}
+
+.filter-modal .modal-title{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 24px;
+    color: #04297A;
+    font-weight: bold;
+}
+
+.filter-modal .modal-content__title{
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E384D;
+    margin-bottom: 8px;
+}
+
+.filter-modal .modal-serchbar{
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+    background: #F4F4F4;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 13px;
+    background-image: url('../../img/digital_kra_library/icons/feather-search.svg');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.filter-modal .modal-selectfield-wrapper .select2-container{
+    width: 100% !important;
+    max-width: 90%;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.filter-modal .select2-container--default .select2-selection--single{
+    border: none;
+}
+
+.filter-modal .select2-container--default .select2-selection--single:focus-visible{
+    outline: none;
+}
+
+.filter-modal .select2-selection__rendered{
+    background: #F4F4F4;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 13px !important;
+    padding: 10px;
+}
+
+.select2-container.select2-container--open{
+    z-index: 9999;
+}
+
+.select2-container--open .select2-dropdown--below{
+    top: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.select2-search--dropdown{
+    padding: 8px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field{
+    background: #F4F4F4AD;
+    border: 1px solid #7070702E !important;
+    border-radius: 3px;
+    background-image: url('../../img/digital_kra_library/icons/feather-search.svg');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 6px 30px 6px 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 4px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-width: 7px 6px 0 6px !important;
+    margin-left: -6px !important;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-width: 0 6px 7px 6px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    color: #171717 !important;
+    background-color: rgba(112, 112, 112, 0.58) !important;
+}
+
+.select2-results__option{
+    padding: 8px !important;
+    background: transparent !important;
+    color: #171717;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.filter-modal .modal-footer{
+    justify-content: center;
+    gap: 15px;
+    border-top: none;
+    margin-top: 15px;
+}
+
+.filter-modal .modal-footer .cancel-btn{
+    font-size: 14px;
+    line-height: 17px;
+    color: #0C52B1;
+}
