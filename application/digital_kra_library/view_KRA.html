@@ -3,137 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role Details</title>
+    <title>View KRA</title>
 
-    <link rel="stylesheet" href="../assets/css/bootstrap5.min.css">
-    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="../assets/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../assets/css/jquery.dataTables.css">
 
-    <link rel="stylesheet" href="../assets/css/digital_kra_library.css">
+    <link rel="stylesheet" href="../../assets/css/digital_kra_library/digital_kra_library.css">
 </head>
 <body>
     <div class="container bg-light py-3">
-        <div class="title-wrapper d-flex align-items-center my-3">
-            <a href="dashboard.html" class="back-button">&#10094;</a>
-
-            <h2 class="page-title">Role Details</h2>
+        <div class="title-wrapper d-flex align-items-center mt-3 mb-4">
+            <h2 class="page-title">View KRAs</h2>
         </div>
 
-        <div class="emprole-detail-wrapper">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Code :</p>
-                    <p class="emprole-detail__data">41007</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Unit :</p>
-                    <p class="emprole-detail__data">CO</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Type :</p>
-                    <p class="emprole-detail__data">Non Executive</p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Name :</p>
-                    <p class="emprole-detail__data">ARC Restructuring Audit officer</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Creater :</p>
-                    <p class="emprole-detail__data">Recovery 1</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex justify-content-end align-items-end gap-3">
-                        <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
-                            <img src="../assets/img/icons/printer.svg" alt="printer"/>
-                        </button>
-                        <button class="round-btn download-btn">
-                            <img src="../assets/img/icons/download-icon.svg" alt="download"/>
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="w-100 d-flex align-items-end gap-3">
+            <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
+                <img src="../../assets/img/digital_kra_library/icons/filter.svg" alt="filter"/>
+            </button>
+            <button class="round-btn download-btn">
+                <img src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download"/>
+            </button>
         </div>
 
-        <div class="roletable-wrapper mt-4 tab-content">
-            <table class="roletable tab-pane fade show active" id="role_tbl" role="tabpanel" aria-labelledby="role-view-tab">
-                <thead>
-                    <tr>
-                        <th>SR NO</th>
-                        <th>ROLE CODE</th>
-                        <th class="text-start">ROLE NAME</th>
-                        <th>UNIT</th>
-                        <th>ROLE CREATER</th>
-                        <th>ROLE TYPE</th>
-                        <th>ACTIONS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>3</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
+        <div class="roletable-wrapper mt-4">
             <!-- KRA view table -->
-            <table class="roletable tab-pane fade kra-tbl" id="kra_tbl" role="tabpanel" aria-labelledby="kra-view-tab">
+            <table class="roletable kra-tbl" id="kra_tbl">
                 <thead>
                     <tr>
                         <th>SR NO</th>
@@ -220,7 +115,6 @@
                 </tbody>
             </table>
         </div>
-        <button class="common-btn validation-btn d-block ms-auto" type="button">Send For Validation</button>
     </div>
 
     <!-- Filter Modal -->
@@ -246,29 +140,17 @@
     </div> 
 
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/jquery-ui.js"></script>
-    <script src="../assets/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/dataTables.buttons.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/dataTables.buttons.min.js"></script>
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
         
         $(document).ready(function() {
-            $('#role_tbl').DataTable({
-                'searching': false,
-                "dom": 'rtip',
-                "pageLength": 20,
-                language: {
-                    paginate: {
-                    next: '>',
-                    previous: '<'  
-                    }
-                }
-            });
-
             $('#kra_tbl').DataTable({
                 'searching': false,
                 "dom": 'rtip',

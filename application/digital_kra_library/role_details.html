@@ -3,59 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View KRA</title>
+    <title>Role Details</title>
 
     <link rel="stylesheet" href="../assets/css/bootstrap5.min.css">
     <link rel="stylesheet" href="../assets/css/jquery-ui.css">
     <link rel="stylesheet" href="../assets/css/jquery.dataTables.css">
 
-    <link rel="stylesheet" href="../assets/css/digital_kra_library.css">
+    <link rel="stylesheet" href="../../assets/css/digital_kra_library/digital_kra_library.css">
 </head>
 <body>
     <div class="container bg-light py-3">
         <div class="title-wrapper d-flex align-items-center my-3">
             <a href="dashboard.html" class="back-button">&#10094;</a>
 
-            <h2 class="page-title">View Roles</h2>
-
-            <ul class="common-tab nav nav-pills ms-auto" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="role-view-tab" data-bs-toggle="pill" data-bs-target="#role_tbl" type="button" role="tab" aria-controls="role_tbl" aria-selected="true">
-                        <img src="../assets/img/icons/white-eye.svg" alt="eye" width="15" height="10">Role View</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="kra-view-tab" data-bs-toggle="pill" data-bs-target="#kra_tbl" type="button" role="tab" aria-controls="kra_tbl" aria-selected="false">
-                        <img src="../assets/img/icons/white-eye.svg" alt="eye" width="15" height="10">KRA View</button>
-                </li>
-            </ul>
+            <h2 class="page-title">Role Details</h2>
         </div>
 
-        <div class="w-100 d-flex justify-content-between">
-            <div class="d-flex w-75">
-                <div class="did-floating-label-content did-error-input selectdropdown-arrow me-4">
-                    <select name="slct" id="slctr" class="did-floating-select selectfield select-menu1" id="make-invalid-options" onclick="this.setAttribute('value', this.value);" value="">
-                        <option value="">Select Status</option>
-                        <option value="Received">Received</option>
-                        <option value="Yettbr">Yet to be received</option>
-                    </select>
-                    <label class="did-floating-label selectfield-label">status</label>
+        <div class="emprole-detail-wrapper">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="emprole-detail__title">Role Code :</p>
+                    <p class="emprole-detail__data">41007</p>
                 </div>
-                <div class="form-group searchbar-wrapper me-4">
-                    <img class="searchbox-icon" src="../assets/img/icons/feather-search.svg" alt="search"/>
-                    <input type="text" id="parameter_search" class="filter_cards form-control" placeholder="Search here">
-                    
-                    <label for="parameter_search" class="did-floating-label">SEARCH</label>
+                <div class="col-md-4">
+                    <p class="emprole-detail__title">Unit :</p>
+                    <p class="emprole-detail__data">CO</p>
                 </div>
-
-                <button type="button" class="btn btn-arrow common-btn">Apply <img class="btn-arrowimg ms-3" src="../assets/img/icons/white-arrow.svg" alt="arrow"/></button>
+                <div class="col-md-4">
+                    <p class="emprole-detail__title">Role Type :</p>
+                    <p class="emprole-detail__data">Non Executive</p>
+                </div>
             </div>
-            <div class="w-25 d-flex justify-content-end align-items-end gap-3">
-                <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
-                    <img src="../assets/img/icons/filter.svg" alt="filter"/>
-                </button>
-                <button class="round-btn download-btn">
-                    <img src="../assets/img/icons/download-icon.svg" alt="download"/>
-                </button>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <p class="emprole-detail__title">Role Name :</p>
+                    <p class="emprole-detail__data">ARC Restructuring Audit officer</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="emprole-detail__title">Role Creater :</p>
+                    <p class="emprole-detail__data">Recovery 1</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end align-items-end gap-3">
+                        <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
+                            <img src="../../assets/img/digital_kra_library/icons/printer.svg" alt="printer"/>
+                        </button>
+                        <button class="round-btn download-btn">
+                            <img src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download"/>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -81,7 +78,7 @@
                         <td>Recovery 1</td>
                         <td>Non Executive</td>
                         <td>
-                            <a class="trans-btn" href="role_details.html">View details</a>
+                            <a class="trans-btn" href="#">View details</a>
                         </td>
                     </tr>
 
@@ -93,7 +90,7 @@
                         <td>Recovery 1</td>
                         <td>Non Executive</td>
                         <td>
-                            <a class="trans-btn" href="role_details.html">View details</a>
+                            <a class="trans-btn" href="#">View details</a>
                         </td>
                     </tr>
 
@@ -105,7 +102,7 @@
                         <td>Recovery 1</td>
                         <td>Non Executive</td>
                         <td>
-                            <a class="trans-btn" href="role_details.html">View details</a>
+                            <a class="trans-btn" href="#">View details</a>
                         </td>
                     </tr>
 
@@ -117,7 +114,7 @@
                         <td>Recovery 1</td>
                         <td>Non Executive</td>
                         <td>
-                            <a class="trans-btn" href="role_details.html">View details</a>
+                            <a class="trans-btn" href="#">View details</a>
                         </td>
                     </tr>
 
@@ -129,7 +126,7 @@
                         <td>Recovery 1</td>
                         <td>Non Executive</td>
                         <td>
-                            <a class="trans-btn" href="role_details.html">View details</a>
+                            <a class="trans-btn" href="#">View details</a>
                         </td>
                     </tr>
                 </tbody>
@@ -249,11 +246,11 @@
     </div> 
 
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/jquery-ui.js"></script>
-    <script src="../assets/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/dataTables.buttons.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/dataTables.buttons.min.js"></script>
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
