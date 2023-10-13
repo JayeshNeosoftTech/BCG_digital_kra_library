@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Role Details</title>
 
-    <link rel="stylesheet" href="../assets/css/bootstrap5.min.css">
-    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="../assets/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../assets/css/jquery.dataTables.css">
 
     <link rel="stylesheet" href="../../assets/css/digital_kra_library/digital_kra_library.css">
 </head>
@@ -56,84 +56,9 @@
             </div>
         </div>
 
-        <div class="roletable-wrapper mt-4 tab-content">
-            <table class="roletable tab-pane fade show active" id="role_tbl" role="tabpanel" aria-labelledby="role-view-tab">
-                <thead>
-                    <tr>
-                        <th>SR NO</th>
-                        <th>ROLE CODE</th>
-                        <th class="text-start">ROLE NAME</th>
-                        <th>UNIT</th>
-                        <th>ROLE CREATER</th>
-                        <th>ROLE TYPE</th>
-                        <th>ACTIONS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>3</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <td>41007</td>
-                        <td class="text-start">ARC Restructuring Audit officer</td>
-                        <td>Samsiddhi</td>
-                        <td>Recovery 1</td>
-                        <td>Non Executive</td>
-                        <td>
-                            <a class="trans-btn" href="#">View details</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
+        <div class="roletable-wrapper mt-4">
             <!-- KRA view table -->
-            <table class="roletable tab-pane fade kra-tbl" id="kra_tbl" role="tabpanel" aria-labelledby="kra-view-tab">
+            <table class="roletable kra-tbl" id="kra_tbl" role="tabpanel" aria-labelledby="kra-view-tab">
                 <thead>
                     <tr>
                         <th>SR NO</th>
@@ -143,6 +68,9 @@
                         <th>Measurablity</th>
                         <th>KRA calculation logic</th>
                         <th>KRA Slabs</th>
+                        <th>KRA actuals data logic</th>
+                        <th>Source data Validator</th>
+
                         <th>KRA actuals data logic</th>
                         <th>Source data Validator</th>
                     </tr>
@@ -160,6 +88,9 @@
                         <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
                         <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
                         <td>MIS</td>
+
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
                     </tr>
 
                     <tr class="close">
@@ -172,6 +103,9 @@
                         <td>M</td>
                         <td>Actuals/Target</td>
                         <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
+
                         <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
                         <td>MIS</td>
                     </tr>
@@ -188,6 +122,9 @@
                         <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
                         <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
                         <td>MIS</td>
+
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
                     </tr>
 
                     <tr class="close">
@@ -200,6 +137,9 @@
                         <td>M</td>
                         <td>Actuals/Target</td>
                         <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
+
                         <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
                         <td>MIS</td>
                     </tr>
@@ -216,11 +156,14 @@
                         <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
                         <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
                         <td>MIS</td>
+
+
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <button class="common-btn validation-btn d-block ms-auto" type="button">Send For Validation</button>
     </div>
 
     <!-- Filter Modal -->

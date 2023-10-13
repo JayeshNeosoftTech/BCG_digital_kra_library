@@ -218,27 +218,34 @@ input:focus-visible {
 
 .roletable{
     width: 100%;
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    overflow: auto;
 }
 
-.roletable tbody{
+/* .roletable tbody{
     display: block;
     width: 100%;
     max-height: 400px;
     overflow-y: auto;
-}
+} */
+.roletable::-webkit-scrollbar ,
 .roletable tbody::-webkit-scrollbar{
     width: 3px;
+    height: 3px;
     background-color: rgba(112, 112, 112, 0.1);
 }
+.roletable::-webkit-scrollbar-thumb,
 .roletable tbody::-webkit-scrollbar-thumb{
     background-color: rgba(112, 112, 112, 0.58);
 }
 
-.roletable thead tr, tbody tr{
+/* .roletable thead tr, tbody tr{
     width: 100%;
     display: table;
     table-layout: fixed;
-}
+} */
 .roletable tbody tr{
     border-bottom: 1px solid rgba(112, 112, 112, 0.2);
 }
@@ -253,8 +260,9 @@ input:focus-visible {
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: bold;
-    padding: 20px 22px;
-    text-align: center;
+    padding: 20px 22px !important;
+    text-align: center !important;
+    white-space: nowrap;
 }
 .roletable td{
     color: #2E384D;
@@ -325,6 +333,7 @@ tr.open td .longtxt-dropdown{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    max-width: 200px;
 }
 tr.open .td-long-text{
     white-space: pre-wrap;
