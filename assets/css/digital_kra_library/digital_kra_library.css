@@ -208,6 +208,41 @@ input:focus-visible {
     box-shadow: 2px 2px 3px #1717172e;
 }
 
+.download-btn{
+    position: relative;
+}
+.download-submenu{
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    padding: 15px 10px;
+    z-index: 1;
+}
+.download-submenu__title{
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #2E384D;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+.download-submenu__icon{
+    width: 12px;
+    height: 12px;
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+
+.download-btn:hover .download-submenu{
+    display: block;
+}
+
 /* table style */
 .roletable-wrapper{
     padding: 15px 12px 40px 12px;
@@ -218,34 +253,27 @@ input:focus-visible {
 
 .roletable{
     width: 100%;
-    display: block;
-    max-width: 100%;
-    max-height: 400px;
-    overflow: auto;
 }
 
-/* .roletable tbody{
+.roletable tbody{
     display: block;
     width: 100%;
     max-height: 400px;
     overflow-y: auto;
-} */
-.roletable::-webkit-scrollbar ,
+}
 .roletable tbody::-webkit-scrollbar{
     width: 3px;
-    height: 3px;
     background-color: rgba(112, 112, 112, 0.1);
 }
-.roletable::-webkit-scrollbar-thumb,
 .roletable tbody::-webkit-scrollbar-thumb{
     background-color: rgba(112, 112, 112, 0.58);
 }
 
-/* .roletable thead tr, tbody tr{
+.roletable thead tr, tbody tr{
     width: 100%;
     display: table;
     table-layout: fixed;
-} */
+}
 .roletable tbody tr{
     border-bottom: 1px solid rgba(112, 112, 112, 0.2);
 }
@@ -262,7 +290,6 @@ input:focus-visible {
     font-weight: bold;
     padding: 20px 22px !important;
     text-align: center !important;
-    white-space: nowrap;
 }
 .roletable td{
     color: #2E384D;
@@ -283,13 +310,13 @@ input:focus-visible {
     line-height: 1.3rem;
     color: #171717;
     font-weight: bold;
-    margin: 5px 30px 0 0;
+    margin: 12px 30px 0 0;
     display: block;
 }
 
 .roletable-wrapper .dataTables_paginate{
     float: left;
-    margin-top: 5px;
+    margin-top: 12px;
     font-size: 1.2rem;
     line-height: 1.4rem;
     display: block;
@@ -308,7 +335,7 @@ input:focus-visible {
 
 .roletable-wrapper .dataTables_paginate .paginate_button.current{
     background-color: #0C51B0;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .kra-tbl tbody tr td:first-child{
@@ -333,7 +360,6 @@ tr.open td .longtxt-dropdown{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 200px;
 }
 tr.open .td-long-text{
     white-space: pre-wrap;
@@ -596,6 +622,7 @@ tr.open .td-long-text{
 
 .filter-modal .select2-container--default .select2-selection--single{
     border: none;
+    height: fit-content;
 }
 
 .filter-modal .select2-container--default .select2-selection--single:focus-visible{
