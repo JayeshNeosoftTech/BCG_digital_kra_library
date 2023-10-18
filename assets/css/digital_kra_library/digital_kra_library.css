@@ -437,6 +437,9 @@ tr.open .td-long-text{
 .card-content-wrapper.yellow-color .card-title .down-arrow{
     color: #F2C611;
 }
+.card-content-wrapper.yellow-color .card-submenu__icon {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(70%) saturate(983%) hue-rotate(356deg) brightness(102%) contrast(90%);
+}
 
 .card-content{
     padding: 25px 50px;
@@ -702,4 +705,39 @@ tr.open .td-long-text{
     font-size: 14px;
     line-height: 17px;
     color: #0C52B1;
+}
+
+/* Modify role edit page style */
+.role-info-wrapper{
+    background: #FFFFFF;
+    border: 1px solid #70707046;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px 25px;
+}
+
+.role-info__content .heading{
+    font-weight: 500;
+    color: #0C51B0;
+    margin-bottom: 5px;
+}
+
+.role-info__content .subheading{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.plus-symbol{
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.roletable th.text-start, .roletable td.text-start{
+    text-align: start !important;
 }
