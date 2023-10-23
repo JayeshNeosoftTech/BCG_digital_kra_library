@@ -343,7 +343,8 @@ input:focus-visible {
     color: #FFFFFF !important;
 }
 
-.kra-tbl tbody tr td:first-child, .modifyrole-tbl tbody tr td:first-child{
+.kra-tbl tbody tr td:first-child, .modifyrole-tbl tbody tr td:first-child,
+.role-status_tbl tbody tr td:first-child{
     position: relative;
 }
 .longtxt-dropdown{
@@ -810,4 +811,66 @@ tr.open .td-long-text{
 
 .add-kra-modal .modal-footer{
     justify-content: flex-end;
+}
+
+.status-indicators-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px 20px;
+}
+
+.status-indicators{
+    display: flex;
+    align-items: center;
+}
+
+.status-indicators__icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    display: block;
+}
+.status-indicators__name{
+    color: #2E384D;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+}
+
+.status-indicators__icon.green{
+    background-color: #15734E;
+}
+
+.status-indicators__icon.yellow{
+    background-color: #F7A029;
+}
+
+.status-indicators__icon.blue{
+    background-color: #0C51B0;
+}
+
+.status-indicators__icon.grey{
+    background-color: #54586E;
+}
+
+.status-badge{
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 4px 14px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.status-badge.green{
+    background-color: #15734E;
+}
+.status-badge.yellow{
+    background-color: #F7A029;
+}
+.status-badge.blue{
+    background-color: #0C51B0;
+}
+.status-badge.grey{
+    background-color: #54586E;
 }

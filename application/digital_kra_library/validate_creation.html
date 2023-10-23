@@ -3,108 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role Status</title>
+    <title>Validate Creation</title>
 
     <link rel="stylesheet" href="../../assets/css/bootstrap5.min.css">
     <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="../../assets/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../../assets/css/jquery.dataTables.min.css">
 
     <link rel="stylesheet" href="../../assets/css/digital_kra_library/digital_kra_library.css">
 
     <link rel="stylesheet" href="../../assets/css/select2.min.css">
+    
 </head>
 <body>
     <div class="container bg-light py-3">
         <div class="title-wrapper d-flex align-items-center mt-3 mb-4">
-            <h2 class="page-title">Role Status</h2>
+            <h2 class="page-title">Validate creation</h2>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-end gap-3">
-                <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
-                    <img src="../../assets/img/digital_kra_library/icons/filter.svg" alt="filter"/>
-                </button>
-                <button class="round-btn download-btn">
-                    <img src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download"/>
+        <div class="w-100 d-flex align-items-end gap-3">
+            <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
+                <img src="../../assets/img/digital_kra_library/icons/filter.svg" alt="filter"/>
+            </button>
+            <button class="round-btn download-btn">
+                <img src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download"/>
 
-                    <div class="download-submenu">
-                        <a class="download-submenu__title mb-4" href="#">
-                            <img class="download-submenu__icon" src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download">
-                            Download Role Master
-                        </a>
-                        <a class="download-submenu__title" href="#">
-                            <img class="download-submenu__icon" src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download">
-                            Download Role wise KRA repository
-                        </a>
-                    </div>
-                </button>
-            </div>
-            <div class="status-indicators-wrapper">
-                <div class="status-indicators">
-                    <span class="status-indicators__icon green"></span>
-                    <p class="status-indicators__name">Approved</p>
+                <div class="download-submenu">
+                    <a class="download-submenu__title mb-4" href="#">
+                        <img class="download-submenu__icon" src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download">
+                        Download Role Master
+                    </a>
+                    <a class="download-submenu__title" href="#">
+                        <img class="download-submenu__icon" src="../../assets/img/digital_kra_library/icons/download-icon.svg" alt="download">
+                        Download Role wise KRA repository
+                    </a>
                 </div>
-
-                <div class="status-indicators">
-                    <span class="status-indicators__icon yellow"></span>
-                    <p class="status-indicators__name">Pending for approval</p>
-                </div>
-
-                <div class="status-indicators">
-                    <span class="status-indicators__icon blue"></span>
-                    <p class="status-indicators__name">Pending with samsiddhi</p>
-                </div>
-
-                <div class="status-indicators">
-                    <span class="status-indicators__icon grey"></span>
-                    <p class="status-indicators__name">Pending with Data Source Validator</p>
-                </div>
-            </div>
+            </button>
         </div>
 
         <div class="roletable-wrapper mt-4">
-            <!-- KRA view table -->
-            <table class="roletable role-status_tbl" id="role_status_tbl">
+            <table class="roletable" id="role_tbl">
                 <thead>
                     <tr>
                         <th>SR NO</th>
                         <th>ROLE CODE</th>
                         <th class="text-start">ROLE NAME</th>
-                        <th class="text-start">KRA NAME</th>
-                        <th>KRA WEIGHT</th>
-                        <th>CRITICALITY</th>
-                        <th>STATUS</th>
+                        <th>UNIT</th>
+                        <th>ROLE CREATER</th>
+                        <th>ROLE TYPE</th>
+                        <th>ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="close">
+                    <tr>
+                        <td>1</td>
+                        <td>41007</td>
+                        <td class="text-start">ARC Restructuring Audit officer</td>
+                        <td>Samsiddhi</td>
+                        <td>Recovery 1</td>
+                        <td>Non Executive</td>
                         <td>
-                            <button type="button" class="longtxt-dropdown">&#10094;</button>1
-                        </td>
-                        <td>41008</td>
-                        <td class="text-start td-long-text">ARC Restructuring Audit officer</td>
-                        <td class="text-start td-long-text">Recovery through sale of assets to ARCs</td>
-                        <td>6</td>
-                        <td>Critical</td>
-                        <td class="text-center">
-                            <div class="status-badge green">Approved</div>
+                            <a class="trans-btn" href="role_details.html">View details</a>
                         </td>
                     </tr>
-                    <tr class="close">
+
+                    <tr>
+                        <td>2</td>
+                        <td>41007</td>
+                        <td class="text-start">ARC Restructuring Audit officer</td>
+                        <td>Samsiddhi</td>
+                        <td>Recovery 1</td>
+                        <td>Non Executive</td>
                         <td>
-                            <button type="button" class="longtxt-dropdown">&#10094;</button>2
+                            <a class="trans-btn" href="role_details.html">View details</a>
                         </td>
-                        <td>41008</td>
-                        <td class="text-start td-long-text">ARC Restructuring Audit officer</td>
-                        <td class="text-start td-long-text">Recovery through sale of assets to ARCs</td>
-                        <td>6</td>
-                        <td>Critical</td>
-                        <td class="text-center">
-                            <div class="status-badge yellow">Pending</div>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>41007</td>
+                        <td class="text-start">ARC Restructuring Audit officer</td>
+                        <td>Samsiddhi</td>
+                        <td>Recovery 1</td>
+                        <td>Non Executive</td>
+                        <td>
+                            <a class="trans-btn" href="role_details.html">View details</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>41007</td>
+                        <td class="text-start">ARC Restructuring Audit officer</td>
+                        <td>Samsiddhi</td>
+                        <td>Recovery 1</td>
+                        <td>Non Executive</td>
+                        <td>
+                            <a class="trans-btn" href="role_details.html">View details</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>41007</td>
+                        <td class="text-start">ARC Restructuring Audit officer</td>
+                        <td>Samsiddhi</td>
+                        <td>Recovery 1</td>
+                        <td>Non Executive</td>
+                        <td>
+                            <a class="trans-btn" href="role_details.html">View details</a>
                         </td>
                     </tr>
                 </tbody>
             </table>
+
+            <button class="common-btn d-block ms-auto">Send For Validation</button>
         </div>
     </div>
 
@@ -180,18 +192,18 @@
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
     <script src="../../assets/js/jquery.dataTables.min.js"></script>
     <script src="../../assets/js/dataTables.buttons.min.js"></script>
-
     <script src="../../assets/js/select2.js"></script>
+
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
         
         $(document).ready(function() {
-            $('#role_status_tbl').DataTable({
+            $('#role_tbl').DataTable({
                 'searching': false,
                 "dom": 'rtip',
                 "pageLength": 20,
@@ -216,10 +228,11 @@
                     parent_tr.addClass('close');
                 }
             });
+
+
+            $('.exampleKRA').select2();
         });
         //$('#role_tbl').DataTable();
-
-        $('.exampleKRA').select2();
     </script>
 </body>
 </html>
