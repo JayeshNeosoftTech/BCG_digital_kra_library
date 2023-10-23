@@ -251,6 +251,11 @@ input:focus-visible {
     border-radius: 5px;
 }
 
+.roletable-wrapper .dataTables_wrapper{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .roletable{
     width: 100%;
 }
@@ -269,7 +274,7 @@ input:focus-visible {
     background-color: rgba(112, 112, 112, 0.58);
 }
 
-.roletable thead tr, tbody tr{
+.roletable thead tr, .roletable tbody tr{
     width: 100%;
     display: table;
     table-layout: fixed;
@@ -338,7 +343,7 @@ input:focus-visible {
     color: #FFFFFF !important;
 }
 
-.kra-tbl tbody tr td:first-child{
+.kra-tbl tbody tr td:first-child, .modifyrole-tbl tbody tr td:first-child{
     position: relative;
 }
 .longtxt-dropdown{
@@ -740,4 +745,69 @@ tr.open .td-long-text{
 
 .roletable th.text-start, .roletable td.text-start{
     text-align: start !important;
+}
+
+.kra-weight-inputfield{
+    max-width: 68px;
+    padding: 6px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    background: #F5F5F566;
+    border: 1px solid #7070704D;
+    border-radius: 3px;
+}
+
+.criticality-selectfield{
+    width: 112px;
+    padding: 4px 5px;
+    background: #F5F5F566;
+    border: 1px solid #7070704D;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.add-kra-modal .modal-dialog{
+    max-width: 75%;
+}
+/* add kra modal table style */
+.add-kra-modal_tbl{
+    margin-top: 20px !important;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.add-kra-modal_tbl tbody tr{
+    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.add-kra-modal_tbl thead tr th:first-child, .add-kra-modal_tbl tbody tr td:first-child{
+    width: 10%;
+}
+
+.add-kra-modal_tbl thead tr{
+    background: #0C51B0;
+    color: #FFFFFF;
+}
+
+.add-kra-modal_tbl tbody tr td{
+    padding: 20px 10px !important;
+}
+
+.add-kra-modal_tbl tbody tr td:nth-child(2){
+    text-align: left !important;
+}
+
+.add-kra-modal_tbl tbody tr td:nth-child(3), .add-kra-modal_tbl thead tr th:nth-child(3){
+    text-align: center;
+}
+
+.add-kra-modal__checkbox{
+    width: 17px;
+    height: 17px;
+    accent-color: #0C51B0;
+}
+
+.add-kra-modal .modal-footer{
+    justify-content: flex-end;
 }

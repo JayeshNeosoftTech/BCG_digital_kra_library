@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role Details</title>
+    <title>Role Status</title>
 
     <link rel="stylesheet" href="../../assets/css/bootstrap5.min.css">
     <link rel="stylesheet" href="../../assets/css/jquery-ui.css">
@@ -16,41 +16,10 @@
 <body>
     <div class="container bg-light py-3">
         <div class="title-wrapper d-flex align-items-center mt-3 mb-4">
-            <h2 class="page-title">Role Details</h2>
+            <h2 class="page-title">Role Status</h2>
         </div>
 
-        <div class="emprole-detail-wrapper">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Code :</p>
-                    <p class="emprole-detail__data">41007</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Unit :</p>
-                    <p class="emprole-detail__data">CO</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Type :</p>
-                    <p class="emprole-detail__data">Non Executive</p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Name :</p>
-                    <p class="emprole-detail__data">ARC Restructuring Audit officer</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="emprole-detail__title">Role Creater :</p>
-                    <p class="emprole-detail__data">Recovery 1</p>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-
-        <div class="title-wrapper d-flex align-items-center mt-3 mb-4">
-            <h2 class="page-title">Role-wise KRAs</h2>
-        </div>
-        <div class="d-flex align-items-end gap-3">
+        <div class="w-100 d-flex align-items-end gap-3">
             <button class="round-btn filter-btn" data-bs-toggle="modal" data-bs-target="#filter_modal">
                 <img src="../../assets/img/digital_kra_library/icons/filter.svg" alt="filter"/>
             </button>
@@ -71,17 +40,22 @@
         </div>
 
         <div class="roletable-wrapper mt-4">
-            <!-- Role-wise KRAs table -->
-            <table class="roletable kra-tbl" id="kra_tbl" role="tabpanel" aria-labelledby="kra-view-tab">
+            <!-- KRA view table -->
+            <table class="roletable kra-tbl" id="kra_tbl">
                 <thead>
                     <tr>
                         <th>SR NO</th>
+                        <th>KRA Code</th>
                         <th class="text-start">KRA Name</th>
+                        <th>Unit Type</th>
+                        <th>Department</th>
+                        <th>Focus</th>
                         <th>Unit</th>
-                        <th>KRA WEIGHT</th>
-                        <th>CRITICALITY</th>
-                        <th>DATA SOURCE</th>
-                        <th>TARGET SOURCE</th>
+                        <th>KRA calculation logic</th>
+                        <th>KRA Slabs</th>
+                        <th>KRA actuals data logic</th>
+                        <th>Data Source</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,48 +63,63 @@
                         <td>
                             <button type="button" class="longtxt-dropdown">&#10094;</button>1
                         </td>
+                        <td>41008</td>
                         <td class="text-start td-long-text">Recovery through sale of assets to ARCs</td>
+                        <td>CO</td>
+                        <td>Recovery</td>
+                        <td>General</td>
                         <td>Amount (cr)</td>
-                        <td>6</td>
-                        <td>Non Critical</td>
-                        <td>Recovery</td>
-                        <td>Recovery</td>
+                        <td>Actuals/Target</td>
+                        <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
+                        <td>
+                            <a class="edit-icon-wrapper" href="modify_role_edit.html">
+                                <img class="edit-icon" src="../../assets/img/digital_kra_library/icons/edit-icon.svg" width="15" height="15" alt="Edit">
+                            </a>
+                        </td>
                     </tr>
 
                     <tr class="close">
                         <td>
                             <button type="button" class="longtxt-dropdown">&#10094;</button>2
                         </td>
-                        <td class="text-start td-long-text">Score as per management audit</td>
-                        <td>Score</td>
-                        <td>6</td>
-                        <td>Non Critical</td>
+                        <td>41008</td>
+                        <td class="text-start td-long-text">Recovery through sale of assets to ARCs</td>
+                        <td>CO</td>
                         <td>Recovery</td>
-                        <td>Recovery</td>
+                        <td>General</td>
+                        <td>Amount (cr)</td>
+                        <td>Actuals/Target</td>
+                        <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
+                        <td>
+                            <a class="edit-icon-wrapper" href="modify_role_edit.html">
+                                <img class="edit-icon" src="../../assets/img/digital_kra_library/icons/edit-icon.svg" width="15" height="15" alt="Edit">
+                            </a>
+                        </td>
                     </tr>
 
                     <tr class="close">
                         <td>
                             <button type="button" class="longtxt-dropdown">&#10094;</button>3
                         </td>
-                        <td class="text-start td-long-text">Score as per management audit</td>
-                        <td>Score</td>
-                        <td>6</td>
-                        <td>Non Critical</td>
+                        <td>41008</td>
+                        <td class="text-start td-long-text">Recovery through sale of assets to ARCs</td>
+                        <td>CO</td>
                         <td>Recovery</td>
-                        <td>Recovery</td>
-                    </tr>
-
-                    <tr class="close">
+                        <td>General</td>
+                        <td>Amount (cr)</td>
+                        <td>Actuals/Target</td>
+                        <td class="td-long-text">0>x<100--- ----100% 100>x<=150%</td>
+                        <td class="td-long-text">NPA amount in portfolio/total advanced portfolio</td>
+                        <td>MIS</td>
                         <td>
-                            <button type="button" class="longtxt-dropdown">&#10094;</button>4
+                            <a class="edit-icon-wrapper" href="modify_role_edit.html">
+                                <img class="edit-icon" src="../../assets/img/digital_kra_library/icons/edit-icon.svg" width="15" height="15" alt="Edit">
+                            </a>
                         </td>
-                        <td class="text-start td-long-text">Score as per management audit</td>
-                        <td>Score</td>
-                        <td>6</td>
-                        <td>Non Critical</td>
-                        <td>Recovery</td>
-                        <td>Recovery</td>
                     </tr>
                 </tbody>
             </table>
@@ -214,24 +203,12 @@
     <script src="../../assets/js/dataTables.buttons.min.js"></script>
 
     <script src="../../assets/js/select2.js"></script>
-    
+
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
         
         $(document).ready(function() {
-            $('#role_tbl').DataTable({
-                'searching': false,
-                "dom": 'rtip',
-                "pageLength": 20,
-                language: {
-                    paginate: {
-                    next: '>',
-                    previous: '<'  
-                    }
-                }
-            });
-
             $('#kra_tbl').DataTable({
                 'searching': false,
                 "dom": 'rtip',
