@@ -289,7 +289,7 @@ input:focus-visible {
     background: #0C52B1;
     color: #FFFFFF;
 }
-.roletable th, td{
+.roletable th, .roletable td{
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: bold;
@@ -972,4 +972,73 @@ tr.open .td-long-text{
 }
 .kra-weight-selectfield:focus-visible{
     outline: none;
+}
+
+/* KRA details page style */
+.kra-info__content{
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 16px;
+}
+
+.kra-info__label{
+    font-weight: bold;
+    width: 220px;
+    color: #0C52B1;
+}
+
+.kra-info__inputfield{
+    width: 336px;
+    padding: 10px 12px;
+    background: #F4F4F480;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
+}
+
+.kra-info__selectfield{
+    width: 336px;
+    padding: 10px 12px;
+    background: #F4F4F480;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
+    background-image: url('../../img/digital_kra_library/icons/dropdown-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 14px 7px;
+    background-position: 97%;
+    appearance: none;
+}
+.kra-info__selectfield:focus-visible{
+    outline: none;
+}
+
+.kra-info__content-tbl{
+    width: 336px;
+    border-radius: 3px;
+    border: 1px solid #7070705F;
+}
+.kra-info__content-tbl table{
+    border-radius: 3px;
+    width: 100%;
+}
+
+.kra-info__content-tbl table tr th, .kra-info__content-tbl table tr td{
+    padding: 10px;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.kra-info__content-tbl table thead tr{
+    background: #F4F4F4;    
+    border-bottom: 1px solid #7070705F;
+}
+
+.kra-info__content-tbl table tbody tr td .inputfield{
+    width: 38px;
+    height: 19px;
+    background: #F5F5F566;
+    border: 0.5px solid #7070704D;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 5px;
 }
