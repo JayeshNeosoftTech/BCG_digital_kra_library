@@ -760,12 +760,20 @@ tr.open .td-long-text{
 
 .criticality-selectfield{
     width: 112px;
-    padding: 4px 5px;
+    padding: 4px 15px 4px 5px;
     background: #F5F5F566;
     border: 1px solid #7070704D;
     border-radius: 3px;
     font-size: 12px;
     line-height: 14px;
+    background-image: url('../../img/digital_kra_library/icons/dropdown-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 9px 5px;
+    background-position: 95%;
+    appearance: none;
+}
+.criticality-selectfield:focus-visible{
+    outline: none;
 }
 
 .add-kra-modal .modal-dialog{
@@ -873,4 +881,95 @@ tr.open .td-long-text{
 }
 .status-badge.grey{
     background-color: #54586E;
+}
+
+/* Create role page style */
+.role-info__selectfield, .role-info__inputfield{
+    background: #F4F4F480;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
+    width: 90%;
+    position: relative;
+    padding: 12px 0 0 0;
+}
+
+.role-info__selectfield::after{
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 7px 0 7px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.role-info__selectfield .selectfield{
+    font-size: 11px;
+    line-height: 13px;
+    color: #171717;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    appearance: none;
+    width: 100%;
+    height: 29px;
+}
+
+.role-info__selectfield .selectfield:focus-visible{
+    outline: none;
+}
+
+.role-info__selectfield .selectfield-label, .role-info__inputfield .inputfield-label{
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: bold;
+    color: #0C52B1;
+    display: block;
+    padding: 0 15px;
+}
+
+.role-info__inputfield .inputfield{
+    font-size: 11px;
+    line-height: 13px;
+    color: #171717;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    width: 100%;
+    height: 29px;
+}
+.role-info__inputfield .inputfield:focus-visible{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.add-row-btn{
+    border: 1px solid #0C51B0;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    background-color: transparent;
+    color: #0C52B1;
+    font-weight: bold;
+}
+
+.kra-weight-selectfield{
+    max-width: 46px;
+    width: 46px;
+    padding: 6px 14px 6px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    background: #F5F5F566;
+    border: 1px solid #7070704D;
+    border-radius: 3px;
+    background-image: url('../../img/digital_kra_library/icons/dropdown-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 9px 5px;
+    background-position: 90%;
+    appearance: none;
+}
+.kra-weight-selectfield:focus-visible{
+    outline: none;
 }
