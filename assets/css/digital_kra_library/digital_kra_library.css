@@ -997,7 +997,7 @@ tr.open .td-long-text{
 
 .kra-info__selectfield{
     width: 336px;
-    padding: 10px 12px;
+    padding: 10px 25px 10px 12px;
     background: #F4F4F480;
     border: 1px solid #7070705F;
     border-radius: 3px;
@@ -1041,4 +1041,14 @@ tr.open .td-long-text{
     border-radius: 3px;
     text-align: center;
     padding: 0 5px;
+}
+
+.kra-info__textarea{
+    resize: none;
+    width: calc(100% - 225px);
+    height: 74px;
+    padding: 10px 12px;
+    background: #F4F4F480;
+    border: 1px solid #7070705F;
+    border-radius: 3px;
 }
